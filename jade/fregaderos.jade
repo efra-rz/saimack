@@ -1,0 +1,28 @@
+extends templates/home
+block title
+  title Nosotros
+block nivo
+  include includes/nivo__head
+block custom-style
+  style(type='text/css').
+    .producto__tabla table{width:100%}
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    .tg .tg-cwv5{background-color:#ffffff;text-align:right;vertical-align:top}
+    .tg .tg-5y5n{background-color:#ecf4ff}
+    .tg .tg-cxkv{background-color:#ffffff}
+    .tg .tg-rb0r{font-size:16px;background-color:#cbcefb;color:#010066;text-align:center}
+    .tg .tg-c57o{background-color:#ecf4ff;vertical-align:top}
+    .tg .tg-zlxb{background-color:#ffffff;text-align:center}
+    .tg .tg-tdyy{background-color:#ffffff;text-align:right}
+    .tg .tg-3we0{background-color:#ffffff;vertical-align:top}
+    .tg .tg-i81m{background-color:#ffffff;text-align:center;vertical-align:top}
+
+block menu-productos
+  li: a.active(href="productos.html") Productos
+block content
+  section#producto__banner
+    include includes/producto__fregaderos
+block nivo-js-noconrol
+  script(src="js/scripts-nivo-witout-control.js")

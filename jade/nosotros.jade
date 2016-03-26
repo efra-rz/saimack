@@ -1,0 +1,10 @@
+extends templates/home
+block title
+  title Nosotros
+block menu-nosotros
+  li: a.active(href="nosotros.html") Quienes Somos
+block content
+  section#nosotros__banner
+    include includes/nosotros__banner
+  section#nosotros__description--mvp    
+    include includes/nosotros__description--mvp

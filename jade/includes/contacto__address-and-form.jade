@@ -1,0 +1,19 @@
+.contacto__address-and-form.mb5
+  .ed-container
+    .ed-item.web-35.contacto__address--bgc
+      .contacto__address
+        h2 Dirección:
+        div Océano Pacífico #431 Col. La Fe C.P. 66477, San Nicolás de los Garza, N.L.
+        h2 Teléfono:
+        a(href="tel:0448321452") 0448321452
+        h2 Email:
+        a(href="mailto:contacto@sanimack") contacto@sanimack.com
+    .ed-item.web-65.contacto__address--bgc
+      .contacto__form--container
+        form.contacto__form(action="http://efrix.net/sendbymail_iscor.php" method="post")
+          ul
+            li: input(type="text" name="nombre" placeholder="NOMBRE" required)
+            li: input(type="text" name="correo" placeholder="MAIL" required)
+            li: input(type="text" name="correo" placeholder="TELÉFONO" required)
+            li: textarea(rows="6"  name="mensaje" placeholder="MENSAJE" required)
+            li: input.btn-send(type="submit" value="Enviar" id="boton")

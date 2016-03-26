@@ -1,0 +1,382 @@
+#home__header{
+  background-color: $white;
+  .logo{
+      margin-top: 2em;
+    @include from(web){
+      margin-top: 0em;
+      padding:1em;
+      img{
+        width:85%;
+        }
+      // background-color: red;
+      }
+    }
+  .tel-and-social{
+    width:100%;
+    .social{
+      display: inline-block;
+      color:$sanimack-blue;
+      padding:0 .5em;
+      margin-top: 1.5em;
+      &:last-child{
+        width:100%;
+        }
+      a{
+        &:before{
+          color:$grey;
+          font-size: 2em;
+          background-color: $sanimack-blue;;
+          padding:.2em;
+          border-radius: .2em;
+        }
+        &:hover::before{
+          background-color: $sanimack-orange;
+          }
+        }
+      p {
+        font-size: 1.7em;
+        text-align: center;
+        font-weight: $bold;
+        margin-top: .5em;
+        }
+      }
+
+    @include from(web){
+      width:100%;
+      .social{
+        margin-top: 0;
+        padding:0 .7em;
+        &:last-child{
+          width:auto;
+          }
+        a{
+          &:before{
+            color:$grey;
+            font-size: 2em;
+            background-color: $sanimack-blue;;
+            padding:.2em;
+            border-radius: .2em;
+          }
+      // background-color: red;
+        // padding:0 1em;
+        color:$sanimack-blue;
+          &:hover::before{
+            background-color: $sanimack-orange;
+            }
+          }
+        p {
+          font-size: 1.7em;
+          text-align: center;
+          font-weight: $bold;
+          }
+        }
+      }
+    }
+  }
+/*Inicio Productos and Header*/
+.inicio__productos-and-header{
+  p{
+    font-weight: $bold;
+    font-size: 1.3em;
+    text-align: center;
+    color:darken($sanimack-blue, 20%);
+    }
+  }
+.inicio__banner{
+  background-color: rgba($sanimack-blue,.1);
+  background-position: top;
+  }
+.slider__main{
+  width: 100%;
+  height:400px;
+  }
+.inicio__productos{
+  background-color: rgba($sanimack-blue,.1);
+  border:1px dashed $grey-text;
+  border-radius: 1.5em;
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+      li{
+        a{
+          padding-left: 1em;
+          display: block;
+          font-size: 1em;
+          color:darken($grey-text, 20);
+          line-height: 2.5em;
+          &:hover{
+            background-color:$sanimack-blue;
+            color:$white;
+            }
+          }
+        }
+      }
+    }
+.inicio__nosotros{
+  width:40%;
+    &--title{
+      text-align: center;
+      font-size: 2.3em;
+      color:$sanimack-blue;
+    }
+  }
+  .marca__container{
+    .marca__box{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: darken($sanimack-blue, 25%);
+      cursor: pointer;
+      img{
+        opacity: 1;
+        padding:0;
+        }
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        &:hover{
+          background-color: $grey;
+          img{
+            opacity: .5;
+            }
+          h1{color:darken($sanimack-blue, 25%)}
+          }
+      }
+    @include grid(marca__box,2)
+    @include from(400px){
+      @include grid(marca__box,4)
+      }
+    @include from(tablet){
+      @include grid(marca__box,5)
+      }
+    @include from(web){
+      @include grid(marca__box,6)
+      }
+    }
+/*Inicio BREAKER*/
+#inicio__breaker{}
+.inicio__breaker{
+    background: url('../img/cocina-1.png');
+    background-attachment: fixed;
+    background-position: center;
+    h2{
+      font-size: 2em;
+      color:$grey;
+      background-color: rgba($sanimack-orange, .7);
+      border-radius:.5em;
+      }
+  }
+.nosotros__description--mvp{
+  background-image: url('../img/cocina-11.png');
+  background-position: center;
+  background-attachment: fixed;
+  background-color: $white;
+  padding:5em 0;
+  }
+.nosotros__description--mvp, .servicios__description{
+  h2{
+    color:$sanimack-orange;
+    }
+  p{
+    color:$grey-text;
+    }
+  }
+.servicios__description{
+  img{
+    min-height: 500px;
+    }
+  }
+/*Nosotros*/
+// .nosotros__banner{
+//   background: url(../img/back-banner.png) center;
+//   }
+
+/*Productos__productos*/
+.productos__productos{
+  background-color: $white;
+  }
+.producto__container{
+  .producto__box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: darken($sanimack-blue, 25%);
+    height: 350px;
+    cursor: pointer;
+    h1{
+      text-align: center;
+      color:darken($sanimack-orange, 5%);
+      }
+    img{
+      max-height: 200px;
+      opacity: 1;
+      padding:2em;
+      }
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      &:hover{
+        background-color: $grey;
+        img{
+          opacity: 1;
+          }
+        h1{color:darken($sanimack-blue, 25%)}
+        }
+    // &:nth-child(1){ background: url(../img/portfolio1.jpg);}
+    // &:nth-child(2){ background: url(../img/portfolio4.jpg);}
+    // &:nth-child(3){ background: url(../img/portfolio3.jpg);}
+    // &:nth-child(4){ background: url(../img/portfolio4.jpg);}
+    // &:nth-child(5){ background: url(../img/portfolio2.jpg);}
+    // &:nth-child(6){ background: url(../img/portfolio3.jpg);}
+    // &:nth-child(7){ background: url(../img/portfolio1.jpg);}
+    // &:nth-child(8){ background: url(../img/portfolio4.jpg);}
+    // &:nth-child(9){ background: url(../img/portfolio1.jpg);}
+    // &:nth-child(10){ background: url(../img/portfolio2.jpg);}
+    // &:nth-child(11){ background: url(../img/portfolio2.jpg);}
+    // &:nth-child(12){ background: url(../img/portfolio2.jpg);}
+    }
+  @include grid(producto__box,1)
+  @include from(tablet){
+    @include grid(producto__box,2)
+    }
+  @include from(web){
+    @include grid(producto__box,3)
+    }
+  }
+/*Contacto*/
+.contacto__map{
+  .ed-container{
+    padding:0;
+    .ed-item{
+      padding:0;
+      }
+    }
+  }
+.contacto__map--google{
+  width:100%;
+  height: 200px;
+  overflow: hidden;
+  @include from(tablet){height: 300px;}
+  @include from(web){height: 350px;}
+  background-color: $white;
+  }
+.maps iframe{
+    pointer-events: none;
+}
+.contacto__address-and-form{
+  }
+.contacto__address--bgc{
+  background-color:$white;
+  }
+.contacto__address{
+  padding:3em 1.5em;
+  @include from(web) {padding:6em 1.5em;}
+  color:$grey-text;
+  h2{
+    font-size: 1.5em;
+    margin: .5em 0;
+    color:$sanimack-orange;
+    font-weight: $light;
+    }
+  a{color:$grey-text;}
+  }
+.contacto__form--container{
+  width: 100%;
+  padding: 0 0 3em;
+  @include from(web) { padding:5em 3em 5em;}
+  }
+.contacto__form{
+  // background-color: $grey-forte;
+  padding: .2em 1.5em;
+  border-radius: .5em;
+  ul{
+    padding:0;
+    list-style-type: none;
+    }
+  input, textarea{
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: $sanimack-blue;
+    width:100%;
+    font-size: 1.1em;
+    line-height: 2.3em;
+    border:0;
+    margin:.5em 0;
+    padding:0 .7em;
+    color:$grey-text;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    &::placeholder{
+      color:rgba($sanimack-orange,.7);
+      }
+    &:hover{
+      background-color: rgba($sanimack-orange,.7);
+      &::placeholder{
+        color:rgba($white,.7);
+        }
+      }
+    &:focus{
+      cursor: auto;
+      outline-style: solid;
+      outline-width: 1px;
+      outline-color: $sanimack-orange;
+      }
+    }
+  textarea{
+    font-size: 1.4em;
+    }
+    .btn-send{
+      outline-style: none;
+      width:auto;
+      background-color: $sanimack-blue;
+      color:$white;
+      border-radius: .3em;
+      cursor: pointer;
+      font-size: 1.3em;
+      text-transform: uppercase;
+
+    }
+  }
+// OWL-SLIDER
+#owl-demo .item{
+  margin: 3px;
+}
+.item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: darken($sanimack-blue, 25%);
+  height: 350px;
+  cursor: pointer;
+  h1{
+    text-align: center;
+    color:darken($sanimack-orange, 5%);
+    }
+  img{
+    max-height: 200px;
+    opacity: 1;
+    padding:2em;
+    }
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  &:hover{
+    background-color: $grey;
+    img{
+      opacity: 1;
+      }
+    h1{color:darken($sanimack-blue, 25%)}
+    }
+  }

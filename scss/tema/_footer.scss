@@ -1,0 +1,95 @@
+#home__footer{}
+.home__footer{
+  .logo--footer{
+    padding:.5em 3em 2em 0;
+    }
+  h3{
+    font-size: .9em;
+    text-transform: uppercase;
+    color:$sanimack-orange;
+    padding-bottom: .7em;
+    margin-bottom:  1.9em;
+    border-bottom: 1px solid darken($sanimack-orange, 35%);
+    }
+  background-color: darken($sanimack-blue, 25%);
+  color:$grey;
+  p, ul{
+    font-size: .87em;
+    }
+  &--productos{
+    ul{
+      list-style-type: disc;
+      padding-left: 1.4em;
+      li{
+        color:$sanimack-orange;
+        line-height: 1.8em;
+        }
+      a{
+        color:$grey;
+        padding-left: .2em;
+        &:hover{
+          color:$sanimack-orange;
+          }
+        }
+      }
+    }
+  }
+.footer__form--container{
+  width: 100%;
+  padding:0 .5em;
+  .footer__form{
+    ul{
+      padding:0;
+      list-style-type: none;
+      input, textarea{
+        background-color: rgba($sanimack-blue, .1);
+        outline-style: solid;
+        outline-width: 1px;
+        outline-color: $sanimack-blue;
+        width:100%;
+        font-size: 1em;
+        line-height: 2em;
+        border:0;
+        margin:.5em 0;
+        padding:0 .7em;
+        color:lighten($grey-text, 35%);
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        &::placeholder{
+          color:rgba($sanimack-orange,.7);
+          }
+        &:hover{
+          // background-color: rgba($sanimack-orange,.7);
+            background-color: rgba(darken($sanimack-blue,30),.7);
+          &::placeholder{
+            color:rgba($white,.7);
+            }
+          }
+        &:focus{
+          cursor: auto;
+          outline-style: solid;
+          outline-width: 1px;
+          outline-color: $sanimack-orange;
+          }
+        }
+        textarea{
+          font-size: 1.4em;
+          }
+        .btn-send{
+          outline-style: none;
+          width:auto;
+          border:1px solid $sanimack-blue;
+          background-color: rgba($sanimack-blue, .1);
+          color:$white;
+          border-radius: .3em;
+          cursor: pointer;
+          font-size: 1em;
+          text-transform: uppercase;
+          &:hover{ background-color: $sanimack-blue;}
+        }
+      }
+    }
+  }

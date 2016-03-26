@@ -1,0 +1,19 @@
+extends templates/home
+block title
+  title Index
+block nivo
+  include includes/nivo__head
+block menu-inicio
+  li: a.active(href="index.html") Inicio 
+block content
+  section#inicio__banner
+    include includes/inicio__banner    
+  header#inicio__productos-and-header
+    //- include includes/inicio__productos-and-header
+    include includes/inicio__productos-and-header--v2
+  section#inicio__proudctos-carousel
+    include includes/inicio__proudctos-carousel
+  section#inicio__marcas
+    include includes/inicio__marcas
+  section#inicio__breaker
+    include includes/inicio__breaker

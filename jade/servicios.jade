@@ -1,0 +1,14 @@
+extends templates/home
+block title
+  title Servicios
+block nivo
+  include includes/nivo__head
+block menu-servicios
+  li: a.active(href="servicios.html") Servicios
+block content
+  section#servicios__banner
+    include includes/servicios__banner
+  section#servicios__description
+    include includes/servicios__description
+block nivo-js-noconrol
+  script(src="js/scripts-nivo-witout-control.js")

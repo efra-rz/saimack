@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    block title
+      title Sanimack
+    meta(name="description" content="This is an example of a meta description. This will often show up in search results.") 
+    link(rel="stylesheet", href="css/styles.css" media="screen")
+    link(rel="stylesheet", href="css/ap-scroll-top.css")
+    link(rel="stylesheet", href="css/owl.carousel.css")
+    link(rel="stylesheet", href="css/owl.theme.css")
+    block custom-style
+    
+    #fb-root
+    script(src="js/facebook.js")
+    script(src="js/zopim.js")
+    script(src="http://code.jquery.com/jquery-1.11.3.min.js")
+    script(src="js/jQuery.scrollSpeed.js")
+    script(src="js/ap-scroll-top.min.js")
+    
+    block nivo
+      
+  body.backk
+    header#home__header
+      include ../includes/home__header
+    block content
+    footer#home__footer
+      include ../includes/home__footer
+      
+    script(src="js/owl.carousel.js")
+    block nivo-js-noconrol
+      script(src="js/scripts.js")

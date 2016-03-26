@@ -1,0 +1,12 @@
+extends templates/home
+block title
+  title Contacto
+block menu-contacto
+  li: a.active(href="contacto.html") Contacto
+block content
+  section#contacto__banner
+    include includes/contacto__banner
+  section#contacto__map
+    include includes/contacto__map
+  section#contacto__address-and-form
+    include includes/contacto__address-and-form

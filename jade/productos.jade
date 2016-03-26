@@ -1,0 +1,10 @@
+extends templates/home
+block title
+  title Productos
+block menu-productos
+  li: a.active(href="productos.html") Productos
+block content
+  section#servicios__banner
+    include includes/productos__banner
+  section#servicios__description
+    include includes/productos__productos
