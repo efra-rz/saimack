@@ -3074,7 +3074,7 @@ h6 {
   .menu-principal li a {
     padding-left: 1.5em;
     line-height: 3em;
-    color: #313986;
+    color: red;
     display: block; }
     .menu-principal li a:hover {
       background-color: #fff;
@@ -3105,7 +3105,7 @@ h6 {
         border-right: 0; } }
 
 #toggle-menu {
-  background: #2a3173;
+  background: #e60000;
   color: #fff;
   line-height: 3;
   font-size: .9em;
@@ -3118,7 +3118,7 @@ h6 {
       display: none; } }
 
 .home__footer {
-  background-color: #0f1129;
+  background-color: maroon;
   color: #F2F2F0; }
   .home__footer .logo--footer {
     padding: .5em 3em 2em 0; }
@@ -3150,10 +3150,10 @@ h6 {
     padding: 0;
     list-style-type: none; }
     .footer__form--container .footer__form ul input, .footer__form--container .footer__form ul textarea {
-      background-color: rgba(49, 57, 134, 0.1);
+      background-color: rgba(255, 0, 0, 0.1);
       outline-style: solid;
       outline-width: 1px;
-      outline-color: #313986;
+      outline-color: red;
       width: 100%;
       font-size: 1em;
       line-height: 2em;
@@ -3171,7 +3171,7 @@ h6 {
       .footer__form--container .footer__form ul input::placeholder, .footer__form--container .footer__form ul textarea::placeholder {
         color: rgba(220, 131, 62, 0.7); }
       .footer__form--container .footer__form ul input:hover, .footer__form--container .footer__form ul textarea:hover {
-        background-color: rgba(8, 9, 22, 0.7); }
+        background-color: rgba(102, 0, 0, 0.7); }
         .footer__form--container .footer__form ul input:hover::-webkit-input-placeholder, .footer__form--container .footer__form ul textarea:hover::-webkit-input-placeholder {
           color: rgba(255, 255, 255, 0.7); }
         .footer__form--container .footer__form ul input:hover::-moz-placeholder, .footer__form--container .footer__form ul textarea:hover::-moz-placeholder {
@@ -3190,15 +3190,15 @@ h6 {
     .footer__form--container .footer__form ul .btn-send {
       outline-style: none;
       width: auto;
-      border: 1px solid #313986;
-      background-color: rgba(49, 57, 134, 0.1);
+      border: 1px solid red;
+      background-color: rgba(255, 0, 0, 0.1);
       color: #fff;
       border-radius: .3em;
       cursor: pointer;
       font-size: 1em;
       text-transform: uppercase; }
       .footer__form--container .footer__form ul .btn-send:hover {
-        background-color: #313986; }
+        background-color: red; }
 
 .backk {
   background-image: url("../img/cocina-11.png");
@@ -3328,13 +3328,13 @@ h6 {
     .styleguide__container .box:nth-child(3) {
       background-color: #F2F2F0; }
     .styleguide__container .box:nth-child(4) {
-      background-color: #313986; }
+      background-color: red; }
       .styleguide__container .box:nth-child(4) h4 {
         color: #fff; }
     .styleguide__container .box:nth-child(5) {
       background-color: #DC833E; }
     .styleguide__container .box:hover {
-      background-color: rgba(49, 57, 134, 0.5); }
+      background-color: rgba(255, 0, 0, 0.5); }
       .styleguide__container .box:hover h4 {
         color: #42240c; }
 
@@ -3346,7 +3346,7 @@ h6 {
 .servicios__banner h1, .productos__banner h1, .contacto__banner h1, .contacto__address-and-form h1, .nosotros__banner h1, .producto__banner h1 {
   font-weight: 300;
   text-align: center;
-  color: #313986;
+  color: red;
   font-size: 3em; }
 
 @media screen and (min-width: 768px) {
@@ -3387,7 +3387,7 @@ h6 {
 
 .boton-back {
   font-size: 2em;
-  background-color: #313986;
+  background-color: red;
   color: #fff;
   padding: .4em;
   cursor: pointer;
@@ -3407,7 +3407,7 @@ h6 {
     width: 100%; }
     #home__header .tel-and-social .social {
       display: inline-block;
-      color: #313986;
+      color: red;
       padding: 0 .5em;
       margin-top: 1.5em; }
       #home__header .tel-and-social .social:last-child {
@@ -3415,7 +3415,7 @@ h6 {
       #home__header .tel-and-social .social a:before {
         color: #F2F2F0;
         font-size: 2em;
-        background-color: #313986;
+        background-color: red;
         padding: .2em;
         border-radius: .2em; }
       #home__header .tel-and-social .social a:hover::before {
@@ -3434,11 +3434,11 @@ h6 {
           #home__header .tel-and-social .social:last-child {
             width: auto; }
           #home__header .tel-and-social .social a {
-            color: #313986; }
+            color: red; }
             #home__header .tel-and-social .social a:before {
               color: #F2F2F0;
               font-size: 2em;
-              background-color: #313986;
+              background-color: red;
               padding: .2em;
               border-radius: .2em; }
             #home__header .tel-and-social .social a:hover::before {
@@ -3453,10 +3453,10 @@ h6 {
   font-weight: 700;
   font-size: 1.3em;
   text-align: center;
-  color: #16193b; }
+  color: #990000; }
 
 .inicio__banner {
-  background-color: rgba(49, 57, 134, 0.1);
+  background-color: rgba(255, 0, 0, 0.1);
   background-position: top; }
 
 .slider__main {
@@ -3464,7 +3464,7 @@ h6 {
   height: 400px; }
 
 .inicio__productos {
-  background-color: rgba(49, 57, 134, 0.1);
+  background-color: rgba(255, 0, 0, 0.1);
   border: 1px dashed #6c6c6c;
   border-radius: 1.5em; }
   .inicio__productos ul {
@@ -3477,7 +3477,7 @@ h6 {
       color: #393939;
       line-height: 2.5em; }
       .inicio__productos ul li a:hover {
-        background-color: #313986;
+        background-color: red;
         color: #fff; }
 
 .inicio__nosotros {
@@ -3485,7 +3485,7 @@ h6 {
   .inicio__nosotros--title {
     text-align: center;
     font-size: 2.3em;
-    color: #313986; }
+    color: red; }
 
 .marca__container {
   display: -webkit-flex;
@@ -3509,7 +3509,7 @@ h6 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #0f1129;
+    background-color: maroon;
     cursor: pointer;
     transition: all .2s ease-in-out; }
     .marca__container .marca__box img {
@@ -3520,7 +3520,7 @@ h6 {
       .marca__container .marca__box:hover img {
         opacity: .5; }
       .marca__container .marca__box:hover h1 {
-        color: #0f1129; }
+        color: maroon; }
   .marca__container > marca__box, .marca__container > .marca__box {
     width: calc(50% - 1em);
     margin: 0.5em; }
@@ -3618,7 +3618,7 @@ h6 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #0f1129;
+    background-color: maroon;
     height: 350px;
     cursor: pointer;
     transition: all .2s ease-in-out; }
@@ -3634,7 +3634,7 @@ h6 {
       .producto__container .producto__box:hover img {
         opacity: 1; }
       .producto__container .producto__box:hover h1 {
-        color: #0f1129; }
+        color: maroon; }
   .producto__container > producto__box, .producto__container > .producto__box {
     width: calc(100% - 1em);
     margin: 0.5em; }
@@ -3719,7 +3719,7 @@ h6 {
   .contacto__form input, .contacto__form textarea {
     outline-style: solid;
     outline-width: 1px;
-    outline-color: #313986;
+    outline-color: red;
     width: 100%;
     font-size: 1.1em;
     line-height: 2.3em;
@@ -3756,7 +3756,7 @@ h6 {
   .contacto__form .btn-send {
     outline-style: none;
     width: auto;
-    background-color: #313986;
+    background-color: red;
     color: #fff;
     border-radius: .3em;
     cursor: pointer;
@@ -3779,7 +3779,7 @@ h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0f1129;
+  background-color: maroon;
   height: 350px;
   cursor: pointer;
   transition: all .2s ease-in-out; }
@@ -3795,4 +3795,4 @@ h6 {
     .item:hover img {
       opacity: 1; }
     .item:hover h1 {
-      color: #0f1129; }
+      color: maroon; }
