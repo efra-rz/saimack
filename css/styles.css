@@ -3374,10 +3374,12 @@ h6 {
   height: 500px; }
 
 .servicios__description .ed-container .ed-item:nth-child(4) .servicios__description--img {
-  background: url("../img/servicios--2.jpg") center; }
+  background: url("../img/galeria/fabrica/sanimack-planta12.jpg") center;
+  background-size: 900px; }
 
 .servicios__description .ed-container .ed-item:nth-child(6) .servicios__description--img {
-  background: url("../img/servicios--3.jpg") center; }
+  background: url("../img/servicios--2.jpg") center;
+  background-size: 700px; }
 
 .producto__tabla {
   margin: 3em 0; }
@@ -3403,6 +3405,8 @@ h6 {
         padding: 1em; }
         #home__header .logo img {
           width: 85%; } }
+  #home__header .header-phone {
+    font-size: .9em; }
   #home__header .tel-and-social {
     width: 100%; }
     #home__header .tel-and-social .social {
@@ -3487,83 +3491,43 @@ h6 {
     font-size: 2.3em;
     color: #313986; }
 
-.marca__container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -0.5em;
-  margin-right: -0.5em; }
-  .marca__container .marca__box {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #0f1129;
-    cursor: pointer;
-    transition: all .2s ease-in-out; }
-    .marca__container .marca__box img {
-      opacity: 1;
-      padding: 0; }
-    .marca__container .marca__box:hover {
-      background-color: #F2F2F0; }
-      .marca__container .marca__box:hover img {
-        opacity: .5; }
-      .marca__container .marca__box:hover h1 {
-        color: #0f1129; }
-  .marca__container > marca__box, .marca__container > .marca__box {
-    width: calc(50% - 1em);
-    margin: 0.5em; }
-  @media screen and (min-width: 400px) {
-    .marca__container {
-      display: -webkit-flex;
-      display: -ms-flexbox;
+/*.marca__container{
+    .marca__box{
       display: flex;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      margin-left: -0.5em;
-      margin-right: -0.5em; }
-      .marca__container > marca__box, .marca__container > .marca__box {
-        width: calc(25% - 1em);
-        margin: 0.5em; } }
-  @media screen and (min-width: 768px) {
-    .marca__container {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      margin-left: -0.5em;
-      margin-right: -0.5em; }
-      .marca__container > marca__box, .marca__container > .marca__box {
-        width: calc(20% - 1em);
-        margin: 0.5em; } }
-  @media screen and (min-width: 1024px) {
-    .marca__container {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      margin-left: -0.5em;
-      margin-right: -0.5em; }
-      .marca__container > marca__box, .marca__container > .marca__box {
-        width: calc(16.66667% - 1em);
-        margin: 0.5em; } }
-
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: darken($sanimack-blue, 25%);
+      cursor: pointer;
+      img{
+        opacity: 1;
+        padding:0;
+        }
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        &:hover{
+          background-color: $grey;
+          img{
+            opacity: .5;
+            }
+          h1{color:darken($sanimack-blue, 25%)}
+          }
+      }
+    @include grid(marca__box,2)
+    @include from(400px){
+      @include grid(marca__box,4)
+      }
+    @include from(tablet){
+      @include grid(marca__box,5)
+      }
+    @include from(web){
+      @include grid(marca__box,6)
+      }
+    }
+  */
 /*Inicio BREAKER*/
 .inicio__breaker {
   background: url("../img/cocina-1.png");
@@ -3662,6 +3626,77 @@ h6 {
       margin-left: -0.5em;
       margin-right: -0.5em; }
       .producto__container > producto__box, .producto__container > .producto__box {
+        width: calc(33.33333% - 1em);
+        margin: 0.5em; } }
+
+/*galeria__galeria*/
+.galeria__galeria {
+  background-color: #fff; }
+
+.galeria__container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -0.5em;
+  margin-right: -0.5em; }
+  .galeria__container .galeria__box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #0f1129;
+    cursor: pointer;
+    transition: all .2s ease-in-out; }
+    .galeria__container .galeria__box h1 {
+      text-align: center;
+      color: #d87528; }
+    .galeria__container .galeria__box img {
+      max-height: 290px;
+      opacity: 1; }
+    .galeria__container .galeria__box:hover {
+      background-color: #F2F2F0; }
+      .galeria__container .galeria__box:hover img {
+        opacity: 1; }
+      .galeria__container .galeria__box:hover h1 {
+        color: #0f1129; }
+  .galeria__container > galeria__box, .galeria__container > .galeria__box {
+    width: calc(100% - 1em);
+    margin: 0.5em; }
+  @media screen and (min-width: 768px) {
+    .galeria__container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      margin-left: -0.5em;
+      margin-right: -0.5em; }
+      .galeria__container > galeria__box, .galeria__container > .galeria__box {
+        width: calc(50% - 1em);
+        margin: 0.5em; } }
+  @media screen and (min-width: 1024px) {
+    .galeria__container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      margin-left: -0.5em;
+      margin-right: -0.5em; }
+      .galeria__container > galeria__box, .galeria__container > .galeria__box {
         width: calc(33.33333% - 1em);
         margin: 0.5em; } }
 
@@ -3764,6 +3799,72 @@ h6 {
     text-transform: uppercase; }
 
 #owl-demo .item {
+  margin: 3px; }
+
+.item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0f1129;
+  height: 350px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; }
+  .item h1 {
+    text-align: center;
+    color: #d87528; }
+  .item img {
+    max-height: 200px;
+    opacity: 1;
+    padding: 2em; }
+  .item:hover {
+    background-color: #F2F2F0; }
+    .item:hover img {
+      opacity: 1; }
+    .item:hover h1 {
+      color: #0f1129; }
+
+#owl-marcas .item-marcas {
+  margin: 3px; }
+
+.item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out; }
+  .item h1 {
+    text-align: center;
+    color: #d87528; }
+  .item img {
+    max-height: 200px;
+    opacity: 1; }
+  .item:hover {
+    background-color: #F2F2F0; }
+    .item:hover img {
+      opacity: 1; }
+    .item:hover h1 {
+      color: #0f1129; }
+
+*
+#owl-clientes .item-clientes {
   margin: 3px; }
 
 .item {

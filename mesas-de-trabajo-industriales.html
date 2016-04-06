@@ -6,6 +6,7 @@
     <title>Nosotros</title>
     <meta name="description" content="This is an example of a meta description. This will often show up in search results."/>
     <link rel="stylesheet" href="css/styles.css" media="screen"/>
+    <link rel="stylesheet" href="css/lightbox.css"/>
     <link rel="stylesheet" href="css/ap-scroll-top.css"/>
     <link rel="stylesheet" href="css/owl.carousel.css"/>
     <link rel="stylesheet" href="css/owl.theme.css"/>
@@ -33,6 +34,7 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
     <script src="js/ap-scroll-top.min.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/jquery.nivo.slider.pack.js"></script>
     <link rel="stylesheet" href="css/nivo-slider.css"/>
     <link rel="stylesheet" href="themes/bar/bar.css"/>
@@ -51,6 +53,7 @@
               <li><a href="nosotros.html">Quienes Somos</a></li>
               <li><a href="servicios.html">Servicios</a></li>
               <li><a href="productos.html" class="active">Productos</a></li>
+              <li><a href="galeria.html">Galería</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
           </nav>
@@ -68,7 +71,7 @@
             <div class="social"><a href="https://twitter.com/Sanimack2" target="_blank" class="icon-twitter"></a></div>
             <div class="social"><a href="https://www.instagram.com/sanimack/" target="_blank" class="icon-instagram"></a></div>
             <div class="social"> 
-              <p><a href="tel:+5210908969">Llámanos al <br> al 10908969</a></p>
+              <p><a href="tel:+5210908969">Llámanos al <br> <span class="header-phone">al 10908969 y 10908887</span></a></p>
             </div>
           </div>
         </div>
@@ -268,7 +271,7 @@
           <div class="ed-item tablet-50 web-25"> 
             <h3>Contacto</h3>
             <div class="footer__form--container">
-              <form action="http://efrix.net/sendbymail_iscor.php" method="post" class="footer__form">
+              <form action="http://efrix.net/form/sanimack-by-mail.php" method="post" class="footer__form">
                 <ul>
                   <li>
                     <input type="text" name="nombre" placeholder="NOMBRE" required="required"/>
@@ -277,7 +280,7 @@
                     <input type="text" name="correo" placeholder="MAIL" required="required"/>
                   </li>
                   <li>
-                    <input type="text" name="correo" placeholder="TELÉFONO" required="required"/>
+                    <input type="text" name="telefono" placeholder="TELÉFONO" required="required"/>
                   </li>
                   <li>
                     <textarea rows="6" name="mensaje" placeholder="MENSAJE" required="required"></textarea>

@@ -26,10 +26,10 @@
     .ed-item.tablet-50.web-25  
       h3 Contacto
       .footer__form--container
-        form.footer__form(action="http://efrix.net/sendbymail_iscor.php" method="post")
+        form.footer__form(action="http://efrix.net/form/sanimack-by-mail.php" method="post")
           ul
             li: input(type="text" name="nombre" placeholder="NOMBRE" required)
             li: input(type="text" name="correo" placeholder="MAIL" required)
-            li: input(type="text" name="correo" placeholder="TELÉFONO" required)
+            li: input(type="text" name="telefono" placeholder="TELÉFONO" required)
             li: textarea(rows="6"  name="mensaje" placeholder="MENSAJE" required)
             li: input.btn-send(type="submit" value="Enviar" id="boton")

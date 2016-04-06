@@ -114,8 +114,12 @@
   .ed-container{
     .ed-item{
         //&:nth-child(2) .servicios__description--img{background: url("../img/cocina-4.jpg") right center;}
-        &:nth-child(4) .servicios__description--img{background: url("../img/servicios--2.jpg") center;}
-        &:nth-child(6) .servicios__description--img{background: url("../img/servicios--3.jpg") center;}
+        &:nth-child(4) .servicios__description--img{background: url("../img/galeria/fabrica/sanimack-planta12.jpg") center;
+          background-size: 900px;
+          }
+        &:nth-child(6) .servicios__description--img{background: url("../img/servicios--2.jpg") center;
+          background-size: 700px;
+          }
       }
     }
   }
