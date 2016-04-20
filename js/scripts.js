@@ -5,6 +5,12 @@ jQuery(document).ready(function($){
   });
 
 });
+//Accordion
+
+  $(".accordion .descripcion").slideUp();
+  $(".accordion .titulo").click(function(){
+  $(this).next(".accordion .descripcion").slideToggle("slow");
+});
 
 //MENU toggle-menu
 $('#toggle-menu').click(function(){

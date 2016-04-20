@@ -258,6 +258,30 @@
 /*galeria__galeria*/
 .galeria__galeria{
   background-color: $white;
+  .accordion .titulo{
+    background-color: $sanimack-blue;
+    padding:.4em;
+    margin-bottom:1em;
+    cursor:pointer;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    h2{
+      text-align: center;
+      color:$white;
+      span{
+        color:darken($sanimack-orange, 20);
+        font-weight: normal;
+        }
+      }
+    &:hover{
+      background-color: darken($sanimack-blue, 20);
+      border-top-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+      }
+    }
   }
 .galeria__container{
   .galeria__box{
